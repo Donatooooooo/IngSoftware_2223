@@ -258,7 +258,7 @@ Anche se il software non è su larga scala e non ha una architettura complessa, 
 
 ## Diagramma dei package
 
-![Diagramma dei package]("docs/img/Sprint_2/diagramma_package.jpg")
+![Diagramma dei package](docs/img/Sprint_2/diagramma_package.jpg)
 
 Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli altri package:
 
