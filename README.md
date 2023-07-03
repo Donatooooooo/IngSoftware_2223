@@ -258,7 +258,7 @@ Anche se il software non è su larga scala e non ha una architettura complessa, 
 
 ## Diagramma dei package
 
-![Diagramma dei package]("/img/../../img/Sprint_2/diagramma_package.jpg)
+![Diagramma dei package]("docs/img/Sprint_2/diagramma_package.jpg)
 
 Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli altri package:
 
@@ -275,17 +275,17 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ### Scelta dei colori:
 
-![Palette colori scelti]("/img/../../img/Sprint_2/ColoriPackage.png)
+![Palette colori scelti]("docs/img/Sprint_2/ColoriPackage.png)
 
 ## 5.1 Chiudere il gioco.
 
 ### Diagramma delle classi
 
-![Diagramma delle classi per il RF 2]("/img/../../img/Sprint_2/umlEsci.png)
+![Diagramma delle classi per il RF 2]("docs/img//Sprint_2/umlEsci.png)
 
 ### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 2]("/img/../../img/Sprint_2/2.png)
+![Diagramma di sequenza per il RF 2]("docs/img/Sprint_2/2.png)
 
 ---
 
@@ -293,11 +293,11 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ### Diagramma delle classi
 
-![Diagramma delle classi per il RF 7]("/img/../../img/Sprint_2/umlGioca.png)
+![Diagramma delle classi per il RF 7]("docs/img/Sprint_2/umlGioca.png)
 
 ### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 7]("/img/../../img/Sprint_2/7.png)
+![Diagramma di sequenza per il RF 7]("docs/img/Sprint_2/7.png)
 
 ---
 
@@ -305,11 +305,11 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ### Diagramma delle classi
 
-![Diagramma delle classi per il RF 14]("/img/../../img/Sprint_2/umlColpire.png)
+![Diagramma delle classi per il RF 14]("docs/img/Sprint_2/umlColpire.png)
 
 ### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 14]("/img/../../img/Sprint_2/14.png)
+![Diagramma di sequenza per il RF 14]("docs/img/Sprint_2/14.png)
 
 ## Decisioni prese in riferimento ai principi OO Design
 
@@ -595,13 +595,13 @@ L'approccio in questione si è evoluto in **3 sprint** di durata variabile, orga
   I meeting si sono svolti anche durante i giorni festivi e di pausa, ma abbiamo utilizzato Discord come piattaforma per il relativo svolgimento. </br>
   Il server di Discord usato per comunicare si presenta cosi come nell'immagine: 
   
-  ![Canale Discord]("/img/../../img/Sprint_2/discord.png)
+  ![Canale Discord]("docs/img/Sprint_2/discord.png)
 
   In questo modo, abbiamo garantito la regolarità delle comunicazioni e delle discussioni tra i membri del Team, consentendo di condividere gli aggiornamenti, risolvere eventuali problemi e coordinare le attività in modo efficace.
 - Ci sono stati degli ulteriori momenti di discussione sul lavoro svolto e da svolgere, avvenute in aula tra una lezione e l'altra, non sempre immediatamente seguiti da una fase di sviluppo.<br>
 
 - In conclusione, abbiamo selezionato le user story più importanti attraverso la creazione di un modulo Google e abbiamo votato le tre user story più rilevanti per ciascuno di noi. Di seguito è presente l'immagine relativa alle user story vincenti.
-![Sondaggio per i requisiti funzionali più importanti]("/img/../../img/Sprint_2/SceltaUserStory.jpg)
+![Sondaggio per i requisiti funzionali più importanti]("docs/img/Sprint_2/SceltaUserStory.jpg)
 
 [Torna all'indice](#indice)
 
@@ -612,13 +612,13 @@ L'approccio in questione si è evoluto in **3 sprint** di durata variabile, orga
 <table width="100%" style="border: 0px;background-color:#00669955;">
   <tr>
     <td>
-        <img src="img/Sprint_0/giad_sprint0.jpg" alt="Giad" >
+        <img src="docs/img/Sprint_0/giad_sprint0.jpg" alt="Giad" >
     </td>
     <td>
-        <img src="img/Sprint_0/mad_sprint0.jpg" alt="Mad">
+        <img src="docs/img/Sprint_0/mad_sprint0.jpg" alt="Mad">
     </td>
     <td>
-        <img src="img/Sprint_0/sad_sprint0.jpg" alt="Sad">
+        <img src="docs/img/Sprint_0/sad_sprint0.jpg" alt="Sad">
     </td>            
   </tr>
   <tr>
@@ -628,13 +628,13 @@ L'approccio in questione si è evoluto in **3 sprint** di durata variabile, orga
   </tr>
   <tr>    
     <td>
-        <img src="img/Sprint_0/retrospettiva3_sprint0.jpg" alt="Dottoressa Daniela Grassi">
+        <img src="docs/img/Sprint_0/retrospettiva3_sprint0.jpg" alt="Dottoressa Daniela Grassi">
     </td>
     <td>
-        <img src="img/Sprint_0/retrospettiva1_sprint0.jpg" alt="testo alternativo" align="left" width="400" height="250"> 
+        <img src="docs/img/Sprint_0/retrospettiva1_sprint0.jpg" alt="testo alternativo" align="left" width="400" height="250"> 
     </td>
     <td>
-        <img src="img/Sprint_0/retrospettiva2_sprint0.jpg" alt="testo alternativo" align="right" width="300" height="350">
+        <img src="docs/img/Sprint_0/retrospettiva2_sprint0.jpg" alt="testo alternativo" align="right" width="300" height="350">
     </td>
   </tr>
   <tr>
@@ -672,24 +672,24 @@ Infine, si è parlato della bella esperienza del **lavoro di gruppo**, in quanto
 <table border="0">
   <tr>
     <td colspan="3" width="100%" align="center">
-        <img src="img/Sprint_1/Sprint1_generalDB.jpg" alt="General sprintboard" width="70%">
+        <img src="docs/img/Sprint_1/Sprint1_generalDB.jpg" alt="General sprintboard" width="70%">
         <br>
         <i>Schema di partenza pre-clusterizzazione</i>
     </td>               
   </tr>
   <tr>
     <td align="center">
-        <img src="img/Sprint_1/glad.jpg" alt="Glad" width="100%" align="center">
+        <img src="docs/img/Sprint_1/glad.jpg" alt="Glad" width="100%" align="center">
         <br>
         <i>Dettaglio: idee "glad"</i>
     </td>
     <td align="center">
-        <img src="img/Sprint_1/mad.jpg" alt="Mad" width="100%" align="center">
+        <img src="docs/img/Sprint_1/mad.jpg" alt="Mad" width="100%" align="center">
         <br>
         <i>Dettaglio: idee "mad"</i>
     </td> 
     <td align="center">
-        <img src="img/Sprint_1/sad.jpg" alt="Sad" width="100%" align="center">
+        <img src="docs/img/Sprint_1/sad.jpg" alt="Sad" width="100%" align="center">
         <br>
         <i>Dettaglio: idee "sad"</i>
     </td> 
@@ -697,12 +697,12 @@ Infine, si è parlato della bella esperienza del **lavoro di gruppo**, in quanto
   <tr align="center">
     <table>
         <td align="center">
-        <img src="img/Sprint_1/clusterizzazione.jpg" alt="Clusterizzazione" width="70%" align="center">
+        <img src="docs/img/Sprint_1/clusterizzazione.jpg" alt="Clusterizzazione" width="70%" align="center">
         <br>
         <i>Clusterizzazione</i>
     </td>
     <td align="center">
-        <img src="img/Sprint_1/cluster.jpg" alt="Cluster" width="72%" align="center">
+        <img src="docs/img/Sprint_1/cluster.jpg" alt="Cluster" width="72%" align="center">
         <br>
         <i>Idee clusterizzate</i>
     </td>
