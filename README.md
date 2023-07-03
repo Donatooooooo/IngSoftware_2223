@@ -258,7 +258,7 @@ Anche se il software non è su larga scala e non ha una architettura complessa, 
 
 ## Diagramma dei package
 
-![Diagramma dei package]("docs/img/Sprint_2/diagramma_package.jpg)
+![Diagramma dei package]("docs/img/Sprint_2/diagramma_package.jpg")
 
 Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli altri package:
 
@@ -275,17 +275,17 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ### Scelta dei colori:
 
-![Palette colori scelti]("docs/img/Sprint_2/ColoriPackage.png)
+![Palette colori scelti]("docs/img/Sprint_2/ColoriPackage.png")
 
 ## 5.1 Chiudere il gioco.
 
 ### Diagramma delle classi
 
-![Diagramma delle classi per il RF 2]("docs/img//Sprint_2/umlEsci.png)
+![Diagramma delle classi per il RF 2]("docs/img//Sprint_2/umlEsci.png")
 
 ### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 2]("docs/img/Sprint_2/2.png)
+![Diagramma di sequenza per il RF 2]("docs/img/Sprint_2/2.png")
 
 ---
 
@@ -293,11 +293,11 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ### Diagramma delle classi
 
-![Diagramma delle classi per il RF 7]("docs/img/Sprint_2/umlGioca.png)
+![Diagramma delle classi per il RF 7]("docs/img/Sprint_2/umlGioca.png")
 
 ### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 7]("docs/img/Sprint_2/7.png)
+![Diagramma di sequenza per il RF 7]("docs/img/Sprint_2/7.png")
 
 ---
 
@@ -305,11 +305,11 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ### Diagramma delle classi
 
-![Diagramma delle classi per il RF 14]("docs/img/Sprint_2/umlColpire.png)
+![Diagramma delle classi per il RF 14]("docs/img/Sprint_2/umlColpire.png")
 
 ### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 14]("docs/img/Sprint_2/14.png)
+![Diagramma di sequenza per il RF 14]("docs/img/Sprint_2/14.png")
 
 ## Decisioni prese in riferimento ai principi OO Design
 
@@ -595,13 +595,13 @@ L'approccio in questione si è evoluto in **3 sprint** di durata variabile, orga
   I meeting si sono svolti anche durante i giorni festivi e di pausa, ma abbiamo utilizzato Discord come piattaforma per il relativo svolgimento. </br>
   Il server di Discord usato per comunicare si presenta cosi come nell'immagine: 
   
-  ![Canale Discord]("docs/img/Sprint_2/discord.png)
+  ![Canale Discord]("docs/img/Sprint_2/discord.png")
 
   In questo modo, abbiamo garantito la regolarità delle comunicazioni e delle discussioni tra i membri del Team, consentendo di condividere gli aggiornamenti, risolvere eventuali problemi e coordinare le attività in modo efficace.
 - Ci sono stati degli ulteriori momenti di discussione sul lavoro svolto e da svolgere, avvenute in aula tra una lezione e l'altra, non sempre immediatamente seguiti da una fase di sviluppo.<br>
 
 - In conclusione, abbiamo selezionato le user story più importanti attraverso la creazione di un modulo Google e abbiamo votato le tre user story più rilevanti per ciascuno di noi. Di seguito è presente l'immagine relativa alle user story vincenti.
-![Sondaggio per i requisiti funzionali più importanti]("docs/img/Sprint_2/SceltaUserStory.jpg)
+![Sondaggio per i requisiti funzionali più importanti]("docs/img/Sprint_2/SceltaUserStory.jpg")
 
 [Torna all'indice](#indice)
 
