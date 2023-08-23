@@ -1,6 +1,3 @@
-# Progetto Floyd Ingegneria del software a.a. 22/23
-# Report
-
 ## Indice
 
 1. [**Introduzione**](#1-introduzione)
