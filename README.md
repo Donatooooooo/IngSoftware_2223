@@ -3,19 +3,13 @@
 1. [**Introduzione**](#1-introduzione)
 2. [**Modello di dominio**](#2-modello-di-dominio)
 3. [**Requisiti specifici**](#31-requisiti-specifici)
-   1. [Requisiti funzionali](#32-requisiti-funzionali)
-   2. [Requisiti non funzionali](#32-requisiti-non-funzionali)
 4. [**System design**](#4-System-design)
 5. [**OO Design**](#5-OO-Design)
-   1. [Chiudere il gioco](#51-chiudere-il-gioco)
-   2. [Iniziare una nuova partita](#52-iniziare-una-nuova-partita)
-   3. [Effettuare un tentativo per colpire una nave](#5.3-Effettuare-un-tentativo-per-colpire-una-nave)
 6. [**Riepilogo dei test**](#6-riepilogo-dei-test)
 7. [**Manuale Utente**](#7-manuale-utente)
 8. [**Processo di sviluppo e organizzazione del lavoro**](#8-processo-di-sviluppo-e-organizzazione-del-lavoro)
 9. [**Analisi retrospettiva**](#9-analisi-retrospettiva)
-   1.  [Sprint 0](#91-sprint-0)
-   2.  [Sprint 1](#92-sprint-1)
+
 
 # 1. Introduzione
 
@@ -36,7 +30,6 @@ Il giocatore vince la partita se riesce a colpire e affondare tutte le navi. Dur
 
 - [Giovanna Antida De Pascale](https://github.com/giovyyy)
 - [Donato Boccuzzi](https://github.com/Donatooooooo)  
-- [Armando Lattaruli](https://github.com/armandolattaruli)  
 - [Paolantonio Di Grassi](https://github.com/paolantoniodigrassi)  
 - [Martina Capone](https://github.com/Martycap)
 
@@ -79,7 +72,6 @@ il risultato è una descrizione concisa, che normalmente appare all'avvio del pr
 - /esci Termina l'applicazione.
 - /abbandona Abbandona la partita.
 
---- 
 ### Requisito funzionale 2 : Chiudere il gioco.
  Come giocatore voglio chiudere il gioco. Al comando 
  > `/esci`  
@@ -88,7 +80,7 @@ il risultato è una descrizione concisa, che normalmente appare all'avvio del pr
 
 - se la conferma è positiva, l'applicazione si chiude restituendo il controllo al sistema operativo 
 - se la conferma è negativa, l'applicazione si predispone a ricevere nuovi tentativi o comandi
----
+
 ### Requisito funzionale 3 : Impostare il livello di gioco.
 Come giocatore voglio impostare il livello di gioco per variare il numero massimo di tentativi sbagliati. Al comando 
 > `/facile` 
@@ -101,7 +93,7 @@ l’applicazione risponde con OK e imposta a 30 il numero massimo di tentativi f
 
 l’applicazione risponde con OK e imposta a 10 il numero massimo di tentativi falliti.
 
----
+
 ### Requisito funzionale 4 : Impostare il numero di tentativi falliti per livello.
 Come giocatore voglio impostare il numero massimo di tentativi falliti per livello di gioco. Al comando 
 > `/facile numero` 
@@ -114,14 +106,14 @@ l’applicazione risponde con OK e imposta a numero il numero massimo di tentati
 
 l’applicazione risponde con OK e imposta a numero il numero massimo di tentativi falliti.
 
----
+
 ### Requisito funzionale 5 : Mostrare il livello e il numero di tentativi.
 Come giocatore voglio mostrare il livello di gioco e il numero massimo di tentativi falliti. Al comando 
  > `/mostralivello` 
  
  l’applicazione risponde visualizzando il livello di gioco e il numero massimo di tentativi falliti. 
 
----
+
 ### Requisito funzionale 6 : Mostrare i tipi di nave e il numero.
 Come giocatore voglio mostrare i tipi di nave e il numero. Al comando 
  > `/mostranavi` 
@@ -132,35 +124,35 @@ Come giocatore voglio mostrare i tipi di nave e il numero. Al comando
 - Incrociatore       ⊠⊠⊠     esemplari: 3  
 - Corazzata          ⊠⊠⊠⊠   esemplari: 2  
 - Portaerei          ⊠⊠⊠⊠⊠ esemplari: 1  
----
+
 ### Requisito funzionale 7: Iniziare una nuova partita.
 Come giocatore voglio iniziare una nuova partita. Al comando 
 > `/gioca`  
 
 se nessuna partita è in corso l'applicazione imposta causalmente le navi, in orizzontale o in verticale, mostra la griglia vuota e si predispone a ricevere il primo tentativo o altri comandi.
 
----
+
 ### Requisito funzionale 8 : Svelare la griglia. 
 Come giocatore voglio svelare la griglia con le navi posizionate. Al comando 
 > `/svelagriglia`
 
  l’applicazione risponde visualizzando, la griglia e tutte le navi posizionate.
 
----
+
 ### Requisito funzionale 9 : Impostare il numero massimo di tentativi.
 Come giocatore voglio impostare direttamente il numero massimo di tentativi che si possono fallire. Al comando 
 > `/tentativi numero`
  
 l’applicazione risponde con OK e imposta a numero il numero massimo di tentativi falliti.
 
----
+
 ### Requisito funzionale 10 : Mostrare il numero massimo di tentativi falliti.
 Come giocatore voglio mostrare il numero massimo di tentativi falliti. Al comando 
 > `/mostratentativi ` 
 
 l’applicazione risponde visualizzando il numero massimo di tentativi falliti. 
 
----
+
 ### Requisito funzionale 11 : Impostare la taglia della griglia.
 Come giocatore voglio impostare la taglia della griglia. Al comando 
 >`/standard`
@@ -173,21 +165,21 @@ l’applicazione risponde con OK e imposta a 18x18 la dimensione della griglia. 
 
 l’applicazione risponde con OK e imposta a 26x26 la dimensione della griglia.  
 
----
+
 ### Requisito funzionale 12 : Impostare il tempo di gioco.
 Come giocatore voglio impostare il tempo di gioco. Al comando 
 > `/tempo numero` 
 
 l’applicazione risponde con OK e imposta a numero il numero minuti a disposizione per giocare. 
 
----
+
 ### Requisito funzionale 13 : Mostrare il tempo di gioco.
 Come giocatore voglio mostrare il tempo di gioco. Al comando 
 > `/mostratempo` 
 
 l’applicazione risponde visualizzando il numero di minuti trascorsi nel gioco e il numero di minuti ancora disponibili.
 
----
+
 ### Requisito funzionale 14 : Effettuare un tentativo per colpire una nave.
 Come giocatore voglio effettuare un tentativo per colpire una nave. 
 
@@ -200,21 +192,21 @@ Qualunque sia l’esito del tentativo, l’applicazione mostra la griglia con le
 La partita termina con successo se il tentativo ha affondato l’ultima nave. 
 La partita termina con insuccesso se è stato raggiunto il numero massimo di tentativi falliti o se è scaduto il tempo di gioco.  
 
----
+
 ### Requisito funzionale 15 : Mostrare la griglia con le navi colpite e affondate.
 Come giocatore voglio mostrare la griglia con le navi colpite e affondate. Al comando 
 > `/mostragriglia` 
 
 l’applicazione risponde visualizzando, la griglia con le navi affondate e le sole parti già colpite delle navi non affondate.   
 
----
+
 ### Requisito funzionale 16 : Mostrare tentativi effettuati e tentativi falliti.
 Come giocatore voglio mostrare il numero di tentativi già effettuati e il numero di tentativi falliti. Al comando 
 > `/mostratentativi`
 
 l’applicazione risponde visualizzando il numero di tentativi già effettuati, il numero di tentativi falliti e il numero massimo di tentativi falliti.
 
----
+
 ### Requisito funzionale 17 : Abbandonare una partita.
 Come giocatore voglio abbandonare una partita. Al comando 
 > `/abbandona`
@@ -280,23 +272,13 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ![Diagramma delle classi per il RF 2](docs/img//Sprint_2/umlEsci.png)
 
-### Diagramma di sequenza
-
-![Diagramma di sequenza per il RF 2](docs/img/Sprint_2/2.png)
-
----
-
 ## 5.2 Iniziare una nuova partita.
 
 ### Diagramma delle classi
 
 ![Diagramma delle classi per il RF 7](docs/img/Sprint_2/umlGioca.png)
 
-### Diagramma di sequenza
 
-![Diagramma di sequenza per il RF 7](docs/img/Sprint_2/7.png)
-
----
 
 ## 5.3 Effettuare un tentativo per colpire una nave.
 
@@ -304,9 +286,6 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 ![Diagramma delle classi per il RF 14](docs/img/Sprint_2/umlColpire.png)
 
-### Diagramma di sequenza
-
-![Diagramma di sequenza per il RF 14](docs/img/Sprint_2/14.png)
 
 ## Decisioni prese in riferimento ai principi OO Design
 
@@ -329,24 +308,6 @@ Tutte queste scelte sono state fatte in funzione di evitare il **debito tecnico*
 # 6. Riepilogo dei test
 Di seguito vengono riassunte e spiegate tutte le classi utilizzate per eseguire i casi di test.
 
-## GameDurationControllerTest
-
-La classe GameDurationControllerTest è la classe di test per la classe `GameDurationController`. Contiene tre metodi di test che verificano il comportamento del metodo `setGameDuration()` della classe `GameDurationController` per valori **positivi**, **zero** e **negativi**. Ogni metodo di test confronta il valore atteso con il valore restituito dal metodo utilizzando l'assert `assertEquals()`.
-
----
-
-## GameTimeCommandTest
-
-La classe `GameTimeCommandTest` è la classe di test che verifica il corretto funzionamento della classe `GameTimeCommand`. La classe contiene diversi metodi di test che coprono varie situazioni di utilizzo della classe GameTimeCommand.
-
-All'interno dei metodi di test vengono eseguite varie *asserzioni* per verificare che i risultati ottenuti siano coerenti con quelli attesi. Ad esempio, vengono testati i metodi `timeCommand` per verificare la corretta gestione della durata di gioco impostata dall'utente. Vengono inoltre esaminati casi in cui vengono forniti input non validi, come stringhe non numeriche o durate di gioco negative.
-
-Altri metodi di test riguardano la visualizzazione del tempo di gioco tramite il metodo `showTimeCommand`, dove vengono verificate le corrispondenze tra il tempo rimanente e il tempo trascorso. Viene anche eseguito un test di `countdown` per verificare che il tempo di gioco venga ridotto correttamente.
-
-Inoltre, vengono testati metodi come `stopCountdownThread`, `getRemainingTime` e `getElapsedTime` per assicurarsi che il comportamento e i valori restituiti siano corretti.
-
---- 
-
 ## GameTimeControllerTest
 
 La classe `GameTimeControllerTest` è una classe di test per la classe `GameTimeController`. Contiene due metodi di test: `testDisplayGameTimeUnlimited` e `testDisplayGameTimeLimited`.
@@ -356,8 +317,6 @@ Il metodo `testDisplayGameTimeUnlimited` verifica il comportamento del metodo `d
 Il metodo `testDisplayGameTimeLimited` verifica il comportamento del metodo `displayGameTime` della classe `GameTimeController` quando il tempo di gioco è **limitato**. Viene verificato che l'output generato dal metodo corrisponda all'output atteso, che mostra il tempo trascorso e il tempo rimanente.
 
 Entrambi i metodi utilizzano le asserzioni di *JUnit* per confrontare i due output e segnalare eventuali discrepanze.
-
---- 
 
 ## GameTableTest
 
@@ -378,8 +337,6 @@ Alcuni dei test includono:
 
 I metodi di test utilizzano gli assert per confrontare i valori attesi con quelli ottenuti durante l'esecuzione dei test.
 
----
-
 ## TableControllerTest
 
 La classe `TableControllerTest` è responsabile di testare il funzionamento della classe `TableController`.
@@ -397,31 +354,17 @@ Inoltre, sono presenti test specifici per le caselle agli angoli della tabella. 
 
 Infine, la classe `TableControllerTest` include anche test per verificare se una nave è stata affondata correttamente. Questi test verificano che il controller riesca a rilevare quando tutte le caselle di una nave sono state colpite e quindi segnalare che la nave è affondata.
 
----
-
 ## ShipMapTest
 
 La classe `ShipMapTest` è la classe di test per la classe `ShipMap`, utilizzata per verificare il corretto funzionamento dei metodi di questa classe. 
 
 All'interno della classe `ShipMapTest` sono presenti diversi metodi di test che si focalizzano su specifiche funzionalità della classe `ShipMap`. Ad esempio, i metodi `testSetXValues`, `testSetYValues` e `testSetDirectionValues` verificano l'assegnazione corretta dei valori delle coordinate X, Y e della direzione alle navi presenti nella mappa. Inoltre, il metodo `testSetValuesWithInvalidKey` controlla se viene sollevata correttamente una `NullPointerException` nel caso in cui venga fornita una **chiave non valida** durante l'impostazione dei valori.
 
----
-
 ## ChangingGameDurationExceptionTest
 
 La classe `ChangingGameDurationExceptionTest` è la classe di test per la classe `ChangingGameDurationException`. Questa classe contiene un singolo metodo di test che verifica il corretto funzionamento del metodo `getMessage()` della classe `ChangingGameDurationException`.
 
 Il metodo di test presente nella classe è chiamato `testChangingGameDurationException()`. All'interno di questo metodo, viene utilizzato il metodo `assertThrows()` per verificare che venga generata correttamente un'istanza di `ChangingGameDurationException`. Questo viene fatto tramite l'utilizzo di una *lambda-function* che lancia esplicitamente un'eccezione di tipo `ChangingGameDurationException`.
-
-
----
-## GameDurationNotSetExceptionTest
-
-La classe `GameDurationNotSetExceptionTest` è una classe di test per la classe `GameDurationNotSetException`, che rappresenta un'eccezione personalizzata per segnalare il caso in cui la durata del gioco non sia stata impostata correttamente.
-
-All'interno della classe `GameDurationNotSetExceptionTest`, è presente un metodo di test chiamato `testGameDurationNotSetException`. Questo metodo verifica il corretto funzionamento del metodo `getMessage` della classe `GameDurationNotSetException`. Viene simulato il lancio dell'eccezione `GameDurationNotSetException`, e successivamente viene confrontato il messaggio dell'eccezione generata con il messaggio atteso. Se i messaggi corrispondono, il test viene considerato superato. In questo caso, il messaggio atteso indica che è stato inserito un comando non valido, specificamente "'/tempo' deve essere succeduto da un numero!".
-
---- 
 
 ## DifficultyTest
 
@@ -435,8 +378,6 @@ I metodi di test chiamati `testSetDifficultyFacileWithMaxAttempts`, `testSetDiff
 
 In ciascun test viene utilizzato il metodo `assertEquals` per confrontare il valore restituito dal metodo di `Difficulty` testato con il valore atteso. Se i valori corrispondono, il test viene considerato superato; altrimenti, viene segnalato un errore.
 
----
-
 ## GameTimerTest
 
 La classe `GameTimerTest` è progettata per verificare il comportamento e la correttezza della classe `GameTimer`. Questa classe è composta da una serie di test che coprono diversi aspetti del funzionamento del timer di gioco.
@@ -447,7 +388,6 @@ Ad esempio, il metodo `testGetElapsedTime()` verifica se il tempo trascorso rest
 
 Un altro test, come `testSetRemainingTime()`, verifica se il tempo rimanente viene impostato correttamente nel timer. Ci sono anche test che verificano il comportamento del timer quando la durata del gioco è zero o quando viene eseguito il reset del tempo trascorso.
 
----
 In conclusione, i casi di test sviluppati dal gruppo seguono l'approccio di testing black box, che si concentra principalmente sulla valutazione del comportamento esterno del programma senza prendere in considerazione i dettagli specifici della sua implementazione interna.
 
 [Torna all'indice](#indice)
@@ -565,7 +505,7 @@ Di seguito vengono riportati degli screen di esempio.
 
 [Torna all'indice](#indice)
 
----
+
 
 # 8. Processo di sviluppo e organizzazione del lavoro
 Il processo di sviluppo della **Battaglia navale** è avvenuto seguendo un approccio *simil-* [***SCRUM***](https://it.wikipedia.org/wiki/Scrum_%28informatica%29). <br><br> 
@@ -663,7 +603,7 @@ Il meeting ha fornito un'opportunità preziosa per discutere vari aspetti relati
 
 Infine, si è parlato della bella esperienza del **lavoro di gruppo**, in quanto momento di crescita personale e professionale. Si è sottolineata l'importanza di favorire la comunicazione e la collaborazione tra i membri del team, nonché di valorizzare le competenze di ciascuno per raggiungere gli obiettivi prefissati nel modo migliore possibile.
 
----
+
 
 ## 9.2 Sprint 1
 <table border="0">
