@@ -12,7 +12,7 @@
 
 # 1. Introduzione
 
-**Battleship**, in italiano *Battaglia Navale*, è un gioco da tavola diffuso in tutto il mondo. Nella nostra versione, implementata in Java, il giocatore deve cercare di colpire e affondare tutte le navi posizionate sulla griglia da un sistema automatico.
+**Battleship** è un gioco da tavola diffuso in tutto il mondo. Nella nostra versione, implementata in Java, il giocatore deve cercare di colpire e affondare tutte le navi posizionate sulla griglia da un sistema automatico.
 
 Il giocatore, prima di iniziare una partita, può scegliere la dimensione della griglia. Avrà a disposizione tre possibili scelte:
 - standard: griglia di dimensione 10x10;
