@@ -4,7 +4,6 @@
 2. [**Modello di dominio**](#2-modello-di-dominio)
 3. [**Requisiti specifici**](#31-requisiti-specifici)
 4. [**System design**](#4-System-design)
-5. [**OO Design**](#5-OO-Design)
 6. [**Riepilogo dei test**](#6-riepilogo-dei-test)
 7. [**Manuale Utente**](#7-manuale-utente)
 8. [**Processo di sviluppo e organizzazione del lavoro**](#8-processo-di-sviluppo-e-organizzazione-del-lavoro)
@@ -259,33 +258,6 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 - `Util`, contenente le classi per la gestione dei comandi del gioco.
 
 [Torna all'indice](#indice)
-
-# 5. OO Design
-
-### Scelta dei colori:
-
-![Palette colori scelti](docs/img/Sprint_2/ColoriPackage.png)
-
-## 5.1 Chiudere il gioco.
-
-### Diagramma delle classi
-
-![Diagramma delle classi per il RF 2](docs/img//Sprint_2/umlEsci.png)
-
-## 5.2 Iniziare una nuova partita.
-
-### Diagramma delle classi
-
-![Diagramma delle classi per il RF 7](docs/img/Sprint_2/umlGioca.png)
-
-
-
-## 5.3 Effettuare un tentativo per colpire una nave.
-
-### Diagramma delle classi
-
-![Diagramma delle classi per il RF 14](docs/img/Sprint_2/umlColpire.png)
-
 
 ## Decisioni prese in riferimento ai principi OO Design
 
