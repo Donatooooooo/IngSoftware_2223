@@ -1,6 +1,5 @@
 package it.uniba.app.FloydGame.Controller;
 
-import it.uniba.app.FloydGame.Boundaries.Printer;
 
 /**
  * <<Control>> Questa classe rappresenta un controller
@@ -20,12 +19,12 @@ public final class GameDurationController {
      */
     public static void setGameDuration(final int gameDuration) {
         if (gameDuration < 0) {
-            Printer.print("\nIl tempo di gioco"
+            System.out.print("\nIl tempo di gioco"
             + " non può essere negativo.\n");
         } else if (gameDuration == 0) {
-            Printer.print("\nIl tempo di gioco è stato disattivato.\n");
+            System.out.print("\nIl tempo di gioco è stato disattivato.\n");
         } else {
-            Printer.print("\nIl tempo di gioco è stato impostato a "
+            System.out.print("\nIl tempo di gioco è stato impostato a "
             + gameDuration
             + " minuti.\n\n");
         }

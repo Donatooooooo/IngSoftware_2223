@@ -3,7 +3,6 @@ package it.uniba.app.FloydGame.Util;
 import it.uniba.app.FloydGame.UserExceptions.MalformedCommand;
 import it.uniba.app.FloydGame.UserExceptions.WrongAttemptsValue;
 import it.uniba.app.FloydGame.Boundaries.CommandParser;
-import it.uniba.app.FloydGame.Boundaries.Printer;
 import it.uniba.app.FloydGame.Controller.Const;
 import it.uniba.app.FloydGame.GameTable.GameTable;
 
@@ -115,7 +114,7 @@ public final class CommandUtil {
           }
           break;
       } catch (ArrayIndexOutOfBoundsException e) {
-        Printer.print(Const.COMMAND_ERROR);
+        System.out.print(Const.COMMAND_ERROR);
       }
     } while (true);
     return command;

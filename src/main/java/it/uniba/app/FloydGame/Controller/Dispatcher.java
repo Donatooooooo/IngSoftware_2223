@@ -3,7 +3,6 @@ package it.uniba.app.FloydGame.Controller;
 import it.uniba.app.FloydGame.Boundaries.DifficultyBoundary;
 import it.uniba.app.FloydGame.Boundaries.GameTableBoundary;
 import it.uniba.app.FloydGame.Boundaries.Help;
-import it.uniba.app.FloydGame.Boundaries.Printer;
 import it.uniba.app.FloydGame.Boundaries.ShipsBoundary;
 import it.uniba.app.FloydGame.Boundaries.Welcome;
 import it.uniba.app.FloydGame.GameTable.GameTable;
@@ -64,7 +63,7 @@ public final class Dispatcher {
      * @param txt stringa generica.
      */
     public void showTxt(final String txt) {
-        Printer.print(txt);
+        System.out.print(txt);
     }
 
     /**
@@ -85,7 +84,7 @@ public final class Dispatcher {
      * Invia la stringa dell'help alla stampa.
      */
     public void showHelpMsg() {
-        Printer.print("Usa /help "
+        System.out.print("Usa /help "
         + "per visualizzare la lista dei comandi disponibili\n");
     }
 
@@ -93,7 +92,7 @@ public final class Dispatcher {
      * Invia la stringa inizio frase alla stampa.
      */
     public void showBattleship() {
-        Printer.print("battleShip:> ");
+        System.out.print("battleShip:> ");
     }
 
     /**
@@ -123,12 +122,12 @@ public final class Dispatcher {
      * Richiama il metodo di stampa dei tentativi.
      */
     public void showGameStats(final GameTimeCommand gameTimeCommand) {
-        Printer.print("\nSTATISTICHE DELLA PARTITA: ");
+        System.out.print("\nSTATISTICHE DELLA PARTITA: ");
         DifficultyBoundary.printTurns();
         if (gameTimeCommand.getTimerFlag()) {
             gameTimeCommand.showTimeCommand(true);
         } else {
-            Printer.print("\n\n");
+            System.out.print("\n\n");
         }
     }
 }

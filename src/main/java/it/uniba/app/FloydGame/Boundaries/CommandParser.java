@@ -43,7 +43,7 @@ public final class CommandParser {
      */
     public static boolean checkExitAnswer(final String msg) {
         String keepPlaying = "y";
-        Printer.print(msg);
+        System.out.print(msg);
 
         do {
             keepPlaying = SCANNER.nextLine().toLowerCase();
@@ -55,10 +55,10 @@ public final class CommandParser {
 
         switch (keepPlaying) {
             case "y":
-                Printer.print("\n+++ Uscita in corso +++\n");
+                System.out.print("\n+++ Uscita in corso +++\n");
                 return true;
             case "n":
-            Printer.print("\n +++ Continua a giocare +++ \n\n");
+            System.out.print("\n +++ Continua a giocare +++ \n\n");
                 return false;
             default:
                 //nessun caso

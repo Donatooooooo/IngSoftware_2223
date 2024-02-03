@@ -1,7 +1,5 @@
 package it.uniba.app.FloydGame.Controller;
 
-import it.uniba.app.FloydGame.Boundaries.Printer;
-
 /**
  * <<Control>> Classe che fornisce un controller
  * per la visualizzazione del tempo di gioco.
@@ -21,11 +19,11 @@ public final class GameTimeController {
     public static void displayGameTime(final int remainingTime,
         final int elapsedTime) {
         if (remainingTime == -1) {
-            Printer.print("\nTempo di gioco illimitato. Tempo trascorso: "
+            System.out.print("\nTempo di gioco illimitato. Tempo trascorso: "
                 + elapsedTime
                 + " minuti.\n\n");
         } else {
-            Printer.print("\nTempo trascorso: "
+            System.out.print("\nTempo trascorso: "
                 + (elapsedTime - 1)
                 + " minuti. \nTempo rimanente: "
                 + (remainingTime + 1) + " minuti.\n\n");
