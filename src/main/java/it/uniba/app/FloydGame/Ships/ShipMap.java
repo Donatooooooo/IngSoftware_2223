@@ -59,7 +59,7 @@ public class ShipMap {
 
 
    /**
-     * Metodo che estrae una nave dalla map.
+     * Metodo che estrae una nave specifica dalla map.
      * @param key chiave dell'elemento da estrarre
      * @return Ship nave estratta
      */
