@@ -1,8 +1,6 @@
 package it.uniba.app.FloydGame.Ships;
 import java.util.Map;
-
 import it.uniba.app.FloydGame.Controller.Const;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
@@ -28,29 +26,37 @@ public class ShipMap {
     public ShipMap() {
         shipMap = new HashMap<>();
         ist = new ArrayList<>();
+        loadList();
+        loadMap();
+    }
 
-        int istPortaerei = Const.IST_PORTAEREI;
-        int istCorazzata = Const.IST_CORAZZATA;
-        int istIncrociatore = Const.IST_INCROCIATORE;
-        int istCacciatorpediniere = Const.IST_CACCIATORPEDINIERE;
+    /**
+     * Popola la lista con le istanze di ogni nave
+     */
+    private void loadList() {
+        ist.add(Const.IST_PORTAEREI);
+        ist.add(Const.IST_CORAZZATA);
+        ist.add(Const.IST_INCROCIATORE);
+        ist.add(Const.IST_CACCIATORPEDINIERE);
+    }
 
-        ist.add(istPortaerei);
-        ist.add(istCorazzata);
-        ist.add(istIncrociatore);
-        ist.add(istCacciatorpediniere);
-
+    /**
+     * Popola la Map con le istanze di ogni nave
+     */
+    private void loadMap() {
         int i = 1;
         shipMap.put(i++, new Ship(Const.SHIP1, Const.DIM_PORTAEREI));
-        shipMap.put(i++, new Ship(Const.SHIP2, Const.DIM_CORAZZATA));
-        shipMap.put(i++, new Ship(Const.SHIP2, Const.DIM_CORAZZATA));
-        shipMap.put(i++, new Ship(Const.SHIP3, Const.DIM_INCROCIATORE));
-        shipMap.put(i++, new Ship(Const.SHIP3, Const.DIM_INCROCIATORE));
-        shipMap.put(i++, new Ship(Const.SHIP3, Const.DIM_INCROCIATORE));
-        shipMap.put(i++, new Ship(Const.SHIP4, Const.DIM_CACCIATORPEDINIERE));
-        shipMap.put(i++, new Ship(Const.SHIP4, Const.DIM_CACCIATORPEDINIERE));
-        shipMap.put(i++, new Ship(Const.SHIP4, Const.DIM_CACCIATORPEDINIERE));
-        shipMap.put(i++, new Ship(Const.SHIP4, Const.DIM_CACCIATORPEDINIERE));
+        for(int j=0; j<2; j++) {
+            shipMap.put(i++, new Ship(Const.SHIP2, Const.DIM_CORAZZATA));
+        }
+        for(int j=0; j<3; j++) {
+            shipMap.put(i++, new Ship(Const.SHIP3, Const.DIM_INCROCIATORE));
+        }
+        for(int j=0; j<4; j++) {
+            shipMap.put(i++, new Ship(Const.SHIP4, Const.DIM_CACCIATORPEDINIERE));
+        }
     }
+
 
    /**
      * Metodo che estrae una nave dalla map.
@@ -130,7 +136,7 @@ public class ShipMap {
             setInstance(2, getInstance(2) - 1);
             break;
         case Const.DIM_CACCIATORPEDINIERE:
-            setInstance(2 + 1, getInstance(2 + 1) - 1);
+            setInstance(3, getInstance(3) - 1);
             break;
         default:
             //Non è previsto un caso di default.
