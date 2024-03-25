@@ -259,6 +259,21 @@ Il package ```it.uniba.app``` dipende dal package FloydGame che contiene gli alt
 
 [Torna all'indice](#indice)
 
+## OO Design
+
+### Scelta dei colori:
+![Palette colori scelti](docs/img/ColoriPackage.png)
+
+### Diagramma 1: uscire dal gioco
+![Diagramma 1](docs/img/umlEsci.png)
+
+### Diagramma 1: giocare una nuova partita
+![Diagramma 2](docs/img/umlGioca.png)
+
+### Diagramma 1: colpire una nave
+![Diagramma 3](docs/img/umlColpire.png)
+
+
 ## Decisioni prese in riferimento ai principi OO Design
 
 Durante lo sviluppo di *Battleship*  abbiamo prestato particolare attenzione all'applicazione dell'information hiding. Abbiamo nascosto i dettagli interni delle classi, permettendo alle altre solo di accedere tramite dei metodi pubblici. 
@@ -280,15 +295,6 @@ Tutte queste scelte sono state fatte in funzione di evitare il **debito tecnico*
 # 6. Riepilogo dei test
 Di seguito vengono riassunte e spiegate tutte le classi utilizzate per eseguire i casi di test.
 
-## GameTimeControllerTest
-
-La classe `GameTimeControllerTest` è una classe di test per la classe `GameTimeController`. Contiene due metodi di test: `testDisplayGameTimeUnlimited` e `testDisplayGameTimeLimited`.
-
-Il metodo `testDisplayGameTimeUnlimited` verifica il comportamento del metodo `displayGameTime` della classe `GameTimeController` quando il tempo di gioco è **illimitato**. Viene verificato che l'output generato dal metodo corrisponda all'output atteso, che mostra il tempo di gioco come "illimitato" e il tempo trascorso.
-
-Il metodo `testDisplayGameTimeLimited` verifica il comportamento del metodo `displayGameTime` della classe `GameTimeController` quando il tempo di gioco è **limitato**. Viene verificato che l'output generato dal metodo corrisponda all'output atteso, che mostra il tempo trascorso e il tempo rimanente.
-
-Entrambi i metodi utilizzano le asserzioni di *JUnit* per confrontare i due output e segnalare eventuali discrepanze.
 
 ## GameTableTest
 
